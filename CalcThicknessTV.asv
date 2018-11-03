@@ -8,6 +8,8 @@ function sam = CalcThicknessTV(ref,sam,samB,lower_limit,increment,upper_limit)
 
 %% Setting B ##############################################################
  sam = structSetB(sam,samB)
+%% Setting Limits
+ lower_limit
 %% TV Thickness Extraction ################################################
  [~,TV]=quickTVExt(ref,sam,(lower_limit:increment:upper_limit)*1e-3)
 %% Plot Thickness #########################################################
