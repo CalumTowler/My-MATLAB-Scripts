@@ -1,6 +1,7 @@
 function sam = CalcThicknessTV(ref,sam,samB,lower_limit,increment,upper_limit)
 %% CalcThicknessTV ########################################################
-% Script to calculate thickness based on total variance functions.
+% Script to calculate thickness based on total variance functions
+% and a model of the Guoy phase shift.
 
 %% Revision History
 % 03/11/28 Initial commit. Function runs but destroys original data.
