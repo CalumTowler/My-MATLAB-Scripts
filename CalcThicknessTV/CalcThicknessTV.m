@@ -1,5 +1,5 @@
 function sam = CalcThicknessTV(ref,sam,samB,lower_limit,increment,upper_limit)
-%% CalcThicknessTV ########################################################
+%% CalcThicknessTVupdateride ########################################################
 % Script that increases speed of workflow by combining processing steps
 % for thickness extraction.
 %
@@ -24,6 +24,4 @@ function sam = CalcThicknessTV(ref,sam,samB,lower_limit,increment,upper_limit)
  [~,TV] = quickTVExt(ref,sam,(lower_limit:increment:upper_limit)*1e-3)
 %% Plot Thickness #########################################################
  plot([TV.thickness],([TV.tv].*[TV.thickness]*1e-3))
-%% Calculate k and d
- sam = updateRIDep(sam)
 end 
